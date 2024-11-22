@@ -11,3 +11,9 @@ body{
 h1{
   color: red;
 }
+
+.red-title{
+  color: red;
+  font-size: 20px;
+  background-color: black;
+}
