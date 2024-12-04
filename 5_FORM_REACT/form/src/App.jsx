@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <h1>Formulário em React</h1>
-      <MyForm/>
+      <MyForm userName={"Roni"} userEmail={"ronildfljfs@gmail.com"} />
     </>
   )
 }
