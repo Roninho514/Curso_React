@@ -1,6 +1,7 @@
 import React from 'react'
 import {useFetch} from "../hooks/useFetch"
 import { Link } from 'react-router-dom';
+import SearchForm from '../Components/SearchForm';
 
 const Home = () => {
   const url = "http://localhost:3000/products"
@@ -9,6 +10,7 @@ const Home = () => {
   return (
     <div>
       <h1>Home</h1>
+      <SearchForm/>
       <ul className='products'>
         { items && items.map(item => (
           <li key={item.id}>

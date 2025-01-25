@@ -9,7 +9,7 @@ const SearchForm = () => {
         navigate("/search?q=" + query)
     }
   return (
-    <form onSubmit={handleSeubmit()}>
+    <form onSubmit={handleSeubmit}>
         <input type="text" onChange={(e) => setQuery(e.target.value)} />
         <input type="submit" value="Buscar" />
     </form>
