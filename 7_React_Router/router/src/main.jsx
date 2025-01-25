@@ -12,6 +12,8 @@ import Contact from './routes/Contact.jsx'
 import ErrorPage from './routes/ErrorPage.jsx'
 import Home from './routes/Home.jsx'
 import Products from './routes/Products.jsx'
+import Info from './routes/Info.jsx'
+import Search from './routes/Search.jsx'
 
 const router = createBrowserRouter([
   {
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
       {
         path:"/products/:id",
         element:<Products/>
+      },
+      {
+        path:"/products/:id/info",
+        element: <Info/>
+      },
+      {
+        path: "search",
+        element: <Search/>
       }
       
     ]
